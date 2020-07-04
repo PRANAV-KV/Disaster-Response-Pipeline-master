@@ -14,7 +14,7 @@ ML Pipeline In a Python script, train_classifier.py, write a machine learning pi
 
 Flask Web App We will be taking the user message and classify them into 36 categories. There are some beautiful visualization of the data as well
 
-All of the necessary criteria for developing the pipeline and web app is given in the rubric below https://review.udacity.com/#!/rubrics/1565/view
+All of the necessary criteria for developing the pipeline and web app is given in the rubric below : https://review.udacity.com/#!/rubrics/1565/view
 
 ### Instructions:
 Run the following commands in the project's root directory to set up your database and model.
