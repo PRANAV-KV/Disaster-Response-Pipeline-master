@@ -1,6 +1,6 @@
 # Disaster Response Pipeline Project
 
-#Git-hub repository link : click [here]()
+#Git-hub repository link : click [here](https://github.com/PRANAV-KV/Disaster-Response-Pipeline-master.git)
 
 ### Project Description:
 
@@ -34,4 +34,4 @@ Example message to classify: "Help, Fire!"
 3. Go to http://127.0.0.1:5000/
 
 
-![Webapp Screenshot](https://raw.githubusercontent.com/chenbowen184/Data_Science_Portfolio/master/Project%205%20-%20Disaster%20Response%20Pipeline/app/webapp%20screenshot.png)
+![Webapp Screenshot](https://github.com/PRANAV-KV/Disaster-Response-Pipeline-master/blob/master/app/webapp%20screenshot.png)
