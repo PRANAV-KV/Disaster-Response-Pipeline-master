@@ -1,31 +1,26 @@
 # Disaster Response Pipeline Project
 
-Project Overview In this course, you've learned and built on your data engineering skills to expand your opportunities and potential as a data scientist. In this project, you'll apply these skills to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
+#Git-hub repository link : click [here]()
 
-In the Project Workspace, you'll find a data set containing real messages that were sent during disaster events. You will be creating a machine learning pipeline to categorize these events so that you can send the messages to an appropriate disaster relief agency.
+### Project Description:
 
-Your project will include a web app where an emergency worker can input a new message and get classification results on several categories. The web app will also display visualizations of the data. This project will show off your software skills, including your ability to create basic data pipelines and write clean, organized code!
+In this project, I built a data transformation - machine learning pipeline that is capable to curate the class of the messages. The pipeline is eventually built into a flask application. The project include a web app where an emergency worker can input a new message and get classification results in several categories. The landing page of the webapp also includes 4 visualizations of the training dataset built with plotly.
 
-Project Components There are three components we'll need to complete for this project.
+### File Descriptions:
+The project contains the following files,
 
-ETL Pipeline In a Python script, process_data.py, write a data cleaning pipeline that: Loads the messages and categories datasets Merges the two datasets Cleans the data Stores it in a SQLite database
+* ETL Pipeline Preparation.ipynb: Notebook experiment for the ETL pipelines
+* ML Pipeline Preparation.ipynb: Notebook experiment for the machine learning pipelines
+* data/process_data.py: The ETL pipeline used to process data in preparation for model building.
+* models/train_classifier.py: The Machine Learning pipeline used to fit, tune, evaluate, and export the model to a Python pickle (pickle is not uploaded to the repo due to size constraints on github).
+* app/templates/~.html: HTML pages for the web app.
+* run.py: Start the Python server for the web app and prepare visualizations.
 
-ML Pipeline In a Python script, train_classifier.py, write a machine learning pipeline that: Loads data from the SQLite database Splits the dataset into training and test sets Builds a text processing and machine learning pipeline Trains and tunes a model using GridSearchCV Outputs results on the test set Exports the final model as a pickle file
+The app is now deployed on heroku at this [link](https://disaster-response-app184.herokuapp.com/)
 
-Flask Web App We will be taking the user message and classify them into 36 categories. There are some beautiful visualization of the data as well
+Example message to classify: "Help, Fire!"
 
-All of the necessary criteria for developing the pipeline and web app is given in the rubric below : https://review.udacity.com/#!/rubrics/1565/view
-
-### Instructions:
-Run the following commands in the project's root directory to set up your database and model.
-
-To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-Run the following command in the app's directory to run your web app. python run.py
-
-Go to http://0.0.0.0:3001/
-
-### Instructions:
+### Local Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
@@ -34,6 +29,9 @@ Go to http://0.0.0.0:3001/
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
 2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+    `python app.py`
 
-3. Go to http://0.0.0.0:3001/
+3. Go to http://127.0.0.1:5000/
+
+
+![Webapp Screenshot](https://raw.githubusercontent.com/chenbowen184/Data_Science_Portfolio/master/Project%205%20-%20Disaster%20Response%20Pipeline/app/webapp%20screenshot.png)
